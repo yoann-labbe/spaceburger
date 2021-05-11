@@ -9,22 +9,24 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
-    width: "100vw",
+    width: "100%",
+    position: "fixed",
+    bottom: "0px",
   },
 });
 
-const Footer = () => {
+const NavigationBar = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   return (
     <BottomNavigation
-      className={classes.root}
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
       showLabels
+      className={classes.root}
     >
       <BottomNavigationAction
         component={Link}
@@ -48,4 +50,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default NavigationBar;
