@@ -4,12 +4,17 @@ import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import HomeIcon from "@material-ui/icons/Home";
 import PersonIcon from "@material-ui/icons/Person";
-import VideogameAssetIcon from "@material-ui/icons/VideogameAsset";
-import { Link } from "react-router-dom";
+import LocalPizzaIcon from '@material-ui/icons/LocalPizza';
+//import { Link } from "react-router-dom";
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 
 const useStyles = makeStyles({
   root: {
+    display: "flex",
     width: "100vw",
+    position:"fixed",
+    bottom: 0,
   },
 });
 
@@ -26,24 +31,37 @@ const Footer = () => {
       }}
       showLabels
     >
-      <BottomNavigationAction
-        component={Link}
-        to="/admin"
-        label="Admin"
-        icon={<PersonIcon />}
-      />
-      <BottomNavigationAction
-        component={Link}
-        to="/"
+
+    <BottomNavigationAction
+        //component={Link}
+        //to="/"
         label="Accueil"
         icon={<HomeIcon />}
-      />
-      <BottomNavigationAction
-        component={Link}
-        to="/home-player"
-        label="Joueur"
-        icon={<VideogameAssetIcon />}
-      />
+    />
+    <BottomNavigationAction
+        //component={Link}
+        //to="/"
+        label="Carte"
+        icon={<LocalPizzaIcon />}
+    />
+    <BottomNavigationAction
+        //component={Link}
+        //to="/"
+        label="Menu"
+        icon={<RestaurantMenuIcon />}
+    />
+    <BottomNavigationAction
+        //component={Link}
+        //to="/"
+        label="Panier"
+        icon={<ShoppingBasketIcon />}
+    />
+    <BottomNavigationAction
+        //component={Link}
+        //to="/admin"
+        label="Compte"
+        icon={<PersonIcon />}
+    />
     </BottomNavigation>
   );
 };
