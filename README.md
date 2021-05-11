@@ -1,2 +1,2 @@
-# Spaceburger
+# spaceburger
 Hackathon
