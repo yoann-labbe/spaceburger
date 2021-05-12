@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
@@ -15,6 +14,8 @@ import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import AddIcon from '@material-ui/icons/Add';
+
 
     
 const useStyles = makeStyles({
@@ -97,6 +98,10 @@ const HomeContent = () => {
         </DialogTitle> */}
         <DialogContent className={classes.content} dividers>
           <Typography gutterBottom>
+
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <p>MENU 15 zlorts</p><AddIcon/>
+        </IconButton>
             <h3>Apéromars</h3>
             <img style={{width:200}} src="assets/outillage_chantier.jpg" alt="outillage" />
           </Typography>
