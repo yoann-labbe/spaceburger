@@ -10,18 +10,17 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: "600px",
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
   },
   media: {
     height: 140,
   },
 });
 
-<<<<<<< HEAD
-export default function MediaCard() {
-=======
 export default function CardProducts() {
->>>>>>> dev
   const classes = useStyles();
 
   return (
@@ -98,11 +97,7 @@ export default function CardProducts() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-<<<<<<< HEAD
-            Fish & vis
-=======
             Fish and vis
->>>>>>> dev
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Vis and fish
@@ -126,17 +121,31 @@ export default function CardProducts() {
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
-<<<<<<< HEAD
-=======
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/assets/clou_vis.jpg"
+          image="/assets/spacecake.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Clovis
+            SpaceCake
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Clou, vis, marmelade, confiture
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions></CardActions>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/assets/dessert.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Cake Vis
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Vis, clou
@@ -144,7 +153,70 @@ export default function CardProducts() {
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
->>>>>>> dev
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/assets/salavis.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            SalaVis
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Vis
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions></CardActions>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/assets/huile.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Huile
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Huile
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions></CardActions>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/assets/huileessence.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Essence
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Essence
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions></CardActions>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/assets/coke.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            HuileCoke
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Huile
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions></CardActions>
     </Card>
   );
 }
