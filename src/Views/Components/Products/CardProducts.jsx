@@ -7,6 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import AddIcon from '@material-ui/icons/Add';
+import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles({
   root: {
@@ -17,6 +19,9 @@ const useStyles = makeStyles({
   },
   media: {
     height: 140,
+  },
+  addicon: {
+    margin: "10px auto",
   },
 });
 
@@ -38,6 +43,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Pain de mie, vis, herbe
           </Typography>
+          <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>10 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -54,6 +62,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Pain de mie, vis, mayonnaise, ketchup, herbe de provence
           </Typography>
+            <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>12 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -70,6 +81,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Baguette, vis, mayonnaise
           </Typography>
+          <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>13 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -86,6 +100,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Vis, clou
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>11 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -102,6 +119,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Vis and fish
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>10 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -118,6 +138,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Vis, clou
           </Typography>
+          <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>7 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -134,6 +157,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Clou, vis, marmelade, confiture
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>11 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -150,6 +176,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Vis, clou
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>4 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -166,6 +195,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Vis
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>9 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -182,6 +214,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Huile
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>6 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -198,6 +233,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Essence
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/><p>8 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
@@ -214,6 +252,9 @@ export default function CardProducts() {
           <Typography variant="body2" color="textSecondary" component="p">
             Huile
           </Typography>
+        <IconButton className={classes.addicon} aria-label="add to favorites">
+          <AddIcon/> <p>5 zlorts</p>
+        </IconButton>
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
