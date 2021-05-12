@@ -8,6 +8,7 @@ import LocalPizzaIcon from '@material-ui/icons/LocalPizza';
 //import { Link } from "react-router-dom";
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -33,20 +34,20 @@ const Footer = () => {
     >
 
     <BottomNavigationAction
-        //component={Link}
-        //to="/"
+        component={Link}
+        to="/"
         label="Accueil"
         icon={<HomeIcon />}
     />
     <BottomNavigationAction
-        //component={Link}
-        //to="/"
+        component={Link}
+        to="/map"
         label="Carte"
         icon={<LocalPizzaIcon />}
     />
     <BottomNavigationAction
-        //component={Link}
-        //to="/"
+        component={Link}
+        to="/menu"
         label="Menu"
         icon={<RestaurantMenuIcon />}
     />
@@ -57,8 +58,8 @@ const Footer = () => {
         icon={<ShoppingBasketIcon />}
     />
     <BottomNavigationAction
-        //component={Link}
-        //to="/admin"
+        component={Link}
+        to="/login"
         label="Compte"
         icon={<PersonIcon />}
     />
