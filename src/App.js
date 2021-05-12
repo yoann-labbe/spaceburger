@@ -26,17 +26,44 @@ function App() {
               </Main>
             )}
           />
+          <Route
+            exact
+            path="/map"
+            render={() => (
+              <Main>
+                <Restaurant />
+              </Main>
+            )}
+          />
+          <Route
+            exact
+            path="/menu"
+            render={() => (
+              <Main>
+                <MenuProduits />
+              </Main>
+            )}
+          />
+          <Route
+            exact
+            path="/login"
+            render={() => (
+              <Main>
+                <Load />
+              </Main>
+            )}
+          />
 
           <Header />
           <Load />
           <Footer />
+        
         </Switch>
-      </Router>
+        </Router>
 
-      {/*<Menu />*/}
-      {/* <Restaurant /> */}
+      
       {/* <ProductsLists />*/}
-      {/* <MenuProduits />*/}
+      {/* */}
     
     </div>
   );

@@ -17,11 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-<<<<<<< HEAD
-export default function MediaCard() {
-=======
 export default function CardProducts() {
->>>>>>> dev
   const classes = useStyles();
 
   return (
@@ -98,11 +94,7 @@ export default function CardProducts() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-<<<<<<< HEAD
-            Fish & vis
-=======
             Fish and vis
->>>>>>> dev
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Vis and fish
@@ -126,8 +118,6 @@ export default function CardProducts() {
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
-<<<<<<< HEAD
-=======
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -144,7 +134,6 @@ export default function CardProducts() {
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
->>>>>>> dev
     </Card>
   );
 }
