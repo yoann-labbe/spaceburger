@@ -14,6 +14,7 @@ import ProductsLists from "./Views/Components/Products/ProductsLists";
 
 function App() {
   return (
+
     <div>
       <Router>
         <Switch>
@@ -53,6 +54,24 @@ function App() {
               </Main>
             )}
           />
+          <Route
+            exact
+            path="/menus"
+            render={() => (
+              <Main>
+                <Menu />
+              </Main>
+            )}
+          />
+          <Route
+            exact
+            path="/produits"
+            render={() => (
+              <Main>
+                <ProductsLists />
+              </Main>
+            )}
+          />
 
           <Header />
           <Load />
@@ -60,11 +79,6 @@ function App() {
         
         </Switch>
         </Router>
-
-      
-      {/* <ProductsLists />*/}
-      {/* */}
-    
     </div>
   );
 }
