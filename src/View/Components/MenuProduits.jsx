@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -22,6 +23,7 @@ const MenuProduits = () => {
       <>
     <Card className={classes.root}>
       <CardActionArea>
+      <Link to="/menus">
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
@@ -34,8 +36,10 @@ const MenuProduits = () => {
             Nos menus
           </Typography> 
         </CardContent>
+      </Link>
       </CardActionArea>
       <CardActionArea>
+      <Link to="/produits">
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
@@ -48,6 +52,7 @@ const MenuProduits = () => {
             Nos produits
           </Typography> 
         </CardContent>
+      </Link>
       </CardActionArea>
      
     </Card>
