@@ -14,10 +14,10 @@ function App() {
     <div className="App">
       <Header />
       {/* <Restaurant /> */}
-      <ProductsLists />
+
       {/* <HomeContent /> */}
       <ProductsLists />
-      <MenuProduits />
+      {/* <MenuProduits /> */}
       {/* <Menu /> */}
       <Footer />
     </div>
