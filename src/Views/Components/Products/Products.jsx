@@ -10,7 +10,11 @@ const useStyles = makeStyles({
   },
 });
 
+<<<<<<< HEAD
 export default function CenteredTabs() {
+=======
+export default function Products() {
+>>>>>>> dev
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 

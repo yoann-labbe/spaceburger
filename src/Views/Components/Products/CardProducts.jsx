@@ -17,7 +17,11 @@ const useStyles = makeStyles({
   },
 });
 
+<<<<<<< HEAD
 export default function MediaCard() {
+=======
+export default function CardProducts() {
+>>>>>>> dev
   const classes = useStyles();
 
   return (
@@ -94,7 +98,11 @@ export default function MediaCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
+<<<<<<< HEAD
             Fish & vis
+=======
+            Fish and vis
+>>>>>>> dev
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Vis and fish
@@ -118,6 +126,25 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions></CardActions>
+<<<<<<< HEAD
+=======
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/assets/clou_vis.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Clovis
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Vis, clou
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions></CardActions>
+>>>>>>> dev
     </Card>
   );
 }
