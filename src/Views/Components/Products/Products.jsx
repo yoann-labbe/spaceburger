@@ -7,6 +7,11 @@ import Tab from "@material-ui/core/Tab";
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    //top: "120px",
+    //width: "100%",
+    //zIndex: 1,
+    //overFlow: "hidden",
+ 
   },
 });
 

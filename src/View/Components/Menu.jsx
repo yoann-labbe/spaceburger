@@ -20,7 +20,7 @@ import { AutorenewTwoTone } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-
+    fontFamily: "Arial",
   },
   media: {
     height: 0,
@@ -105,7 +105,7 @@ export default function Menu() {
       />
       <CardMedia
         className={classes.media}
-        image="assets/menun.jpg"
+        image="assets/menuquatre.jpg"
         title="Menu C3PO"
       />
       <CardContent>
@@ -137,7 +137,7 @@ export default function Menu() {
       />
       <CardMedia
         className={classes.media}
-        image="assets/menun.jpg"
+        image="assets/menutrois.jpg"
         title="Menu R2D2"
       />
       <CardContent>
@@ -169,7 +169,7 @@ export default function Menu() {
       />
       <CardMedia
         className={classes.media}
-        image="assets/menun.jpg"
+        image="assets/menudeux.jpg"
         title="Menu Wall-E"
       />
       <CardContent>

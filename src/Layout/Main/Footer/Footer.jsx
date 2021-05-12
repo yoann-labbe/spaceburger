@@ -52,8 +52,8 @@ const Footer = () => {
         icon={<RestaurantMenuIcon />}
     />
     <BottomNavigationAction
-        //component={Link}
-        //to="/"
+        component={Link}
+        to="/panier"
         label="Panier"
         icon={<ShoppingBasketIcon />}
     />

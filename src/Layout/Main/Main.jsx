@@ -4,6 +4,7 @@ import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
 
@@ -18,6 +19,7 @@ function Main(props) {
     <div className={classes.root}>
       <Header />
       {children}
+      
       <Footer />
     </div>
   );

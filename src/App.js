@@ -9,7 +9,7 @@ import Load from "./View/Components/Load";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Main from "./Layout/Main/Main";
 import MenuProduits from "./View/Components/MenuProduits";
-
+import Panier from "./View/Components/Panier";
 import ProductsLists from "./Views/Components/Products/ProductsLists";
 
 function App() {
@@ -69,6 +69,15 @@ function App() {
             render={() => (
               <Main>
                 <ProductsLists />
+              </Main>
+            )}
+          />
+          <Route
+            exact
+            path="/panier"
+            render={() => (
+              <Main>
+                <Panier />
               </Main>
             )}
           />
